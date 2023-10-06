@@ -18,6 +18,7 @@
 // Declarar son las librerías que vamos a ocupar
 //Se debe estructurar el tipo de dato acorde a su entrada
 // Si es entero obtenerlo como entero, si es char, obtenerlo como char
+
 import java.util.Scanner;
 
 class EstructurasControl {
@@ -253,8 +254,31 @@ class EstructurasControl {
                     }
                     break;
                 case 7:
+                  //vamos a imprimir un tabla
+                  //un ciclo for
+                  for(int n = 1; n <= 10; n++){
+                    System.out.println(n + " " + (n*10) + " " + (n*100) + " " + (n*1000) + " " + (n*10000));
+                  }
+                  break;
                 case 8:
                 case 9:
+                  System.out.println(x: "Cuadrado mágico");
+                  System.out.println(x: "Ingrese el tamaño del cuadrado a pintar");
+                  num1 = entrada.nextInt();
+
+                  if(num1 >= 1 && num1 <= 20){
+                    //ciclo para las filas
+                    for(int i = 1; i <= num1; i++){
+                        //imprimir columnas
+                        for(int j = 1; j <= num1; j++){
+                            System.out.print(s:"*");
+                        }
+                        System.out.println(x:"");
+                    }     
+                  }else{
+                    System.out.println(x:"Ingresa solo numeros entre el 1 y 20");
+                  }
+                  break;
                 case 10:
                 case 11:
                 case 12:
