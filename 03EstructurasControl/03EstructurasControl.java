@@ -1,7 +1,31 @@
+<<<<<<< HEAD
 import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
+=======
+//Vamos a crear un programa mediante el cual debemos tener un menú
+//de selección para elegir alguna de las 14 opciones sig:
+//1: Bono o descuento por edad
+//2: Convertir números decimales a binarios
+//3: Convertir temperaturas
+//4: Número de positivos y negativos
+//5: Tiendita
+//6: Área y Perímetro
+//7: Tabla
+//8: Factorial
+//9: Dibujitos
+//10: Figura Hueca
+//11: Patrón
+//12: Diamante
+//13: Calculadora
+//14: Salir
+
+// Declarar son las librerías que vamos a ocupar
+//Se debe estructurar el tipo de dato acorde a su entrada
+// Si es entero obtenerlo como entero, si es char, obtenerlo como char
+
+>>>>>>> 9371a9f4fe4ffa0a175e31f943868aef76c83cec
 import java.util.Scanner;
 import java.awt.*;
 import java.awt.event.*;
@@ -399,6 +423,7 @@ class EstructuraControl extends JPanel{
                     ModeloDatos() {
                     addTableModelListener( new TablaListener() );
                     }
+<<<<<<< HEAD
                     public int getColumnCount() { 
                     return( datos[0].length ); 
                     }
@@ -436,6 +461,45 @@ class EstructuraControl extends JPanel{
                     }
                     } 
                break;
+=======
+                    break;
+                case 7:
+                  //vamos a imprimir un tabla
+                  //un ciclo for
+                  for(int n = 1; n <= 10; n++){
+                    System.out.println(n + " " + (n*10) + " " + (n*100) + " " + (n*1000) + " " + (n*10000));
+                  }
+                  break;
+                case 8:
+                case 9:
+                  System.out.println(x: "Cuadrado mágico");
+                  System.out.println(x: "Ingrese el tamaño del cuadrado a pintar");
+                  num1 = entrada.nextInt();
+
+                  if(num1 >= 1 && num1 <= 20){
+                    //ciclo para las filas
+                    for(int i = 1; i <= num1; i++){
+                        //imprimir columnas
+                        for(int j = 1; j <= num1; j++){
+                            System.out.print(s:"*");
+                        }
+                        System.out.println(x:"");
+                    }     
+                  }else{
+                    System.out.println(x:"Ingresa solo numeros entre el 1 y 20");
+                  }
+                  break;
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
+                    break;
+            }
+>>>>>>> 9371a9f4fe4ffa0a175e31f943868aef76c83cec
 
                case 8:
                  System.out.print("Introduce un numero entero >= 0: ");
